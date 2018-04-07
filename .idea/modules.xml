@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/wcPro.iml" filepath="$PROJECT_DIR$/wcPro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wcProPlus.iml" filepath="$PROJECT_DIR$/wcProPlus.iml" />
     </modules>
   </component>
 </project>
