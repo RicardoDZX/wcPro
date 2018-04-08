@@ -9,27 +9,27 @@ public class Main {
 	// write your code here
         //long startTime = System.currentTimeMillis();
 
-        WordFrequncyCount wordFrequncyCount=new WordFrequncyCount();
+        WordAnalysis wordAnalysis=new WordAnalysis();
         String temp=InportFile.readFile(args);
 
         //long startTime2 = System.currentTimeMillis();
 
-        wordFrequncyCount.process(temp);
+        wordAnalysis.process(temp);
 
         //long startTime3 = System.currentTimeMillis();
 
         Sort sort=new Sort();
-        //List<Map.Entry<String,Integer>> res=sort.mySort(wordFrequncyCount.map);
+        List<Map.Entry<String,Integer>> res=sort.mySort2(wordAnalysis.map);
         //long startTime4 = System.currentTimeMillis();
-        List<Map.Entry<String,Integer>> res2=sort.mySort2(wordFrequncyCount.map);
+        //List<Map.Entry<String,Integer>> res2=sort.mySort3(wordAnalysis.map);
         //long startTime5 = System.currentTimeMillis();
 
 
         OutputFile outputFile=new OutputFile();
-        outputFile.outPut(res2);
+        outputFile.outPut(res);
 
         //long endTime=System.currentTimeMillis();
-       // System.out.println("当前程序耗时："+(endTime-startTime)+"ms");
+        //System.out.println("当前程序耗时："+(endTime-startTime)+"ms");
         //System.out.println("输入耗时："+(startTime2-startTime)+"ms");
         //System.out.println("词频耗时："+(startTime3-startTime2)+"ms");
         //System.out.println("排序耗时："+(startTime4-startTime3)+"ms");

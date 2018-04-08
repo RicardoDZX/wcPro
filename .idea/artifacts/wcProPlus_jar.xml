@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="wcProPlus:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/wcProPlus_jar</output-path>
+    <root id="root">
+      <element id="archive" name="wcProPlus.jar">
+        <element id="module-output" name="wcProPlus" />
+      </element>
+    </root>
+  </artifact>
+</component>
