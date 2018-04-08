@@ -47,9 +47,13 @@ public class WordAnalysis {
                 }
                 builder.delete(0, builder.length());
             }
-
         }
         return map;
+    }
+
+    public int longProcess(String filename) throws Exception{
+        process(filename);
+        return counter;
     }
 }
 

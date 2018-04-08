@@ -14,12 +14,12 @@ public class Main {
 
         //long startTime2 = System.currentTimeMillis();
 
-        wordAnalysis.process(temp);
+        //wordAnalysis.process(temp);
 
         //long startTime3 = System.currentTimeMillis();
 
         Sort sort=new Sort();
-        List<Map.Entry<String,Integer>> res=sort.mySort2(wordAnalysis.map);
+        List<Map.Entry<String,Integer>> res=sort.mySort2(wordAnalysis.process(temp));
         //long startTime4 = System.currentTimeMillis();
         //List<Map.Entry<String,Integer>> res2=sort.mySort3(wordAnalysis.map);
         //long startTime5 = System.currentTimeMillis();
